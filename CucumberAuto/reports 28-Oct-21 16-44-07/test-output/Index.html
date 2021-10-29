@@ -1,0 +1,1537 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Oct 28, 2021 04:44:07 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Regression</a><a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@Important</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create account of facebook1</p>
+            <p class="text-sm">
+              <span>4:44:08 pm</span> / <span>00:00:20:247</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create account of facebook1</h5>
+<span class='badge badge-success'>10.28.2021 4:44:08 pm</span>
+<span class='badge badge-danger'>10.28.2021 4:44:28 pm</span>
+<span class='badge badge-default'>00:00:20:247</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user you need to open facebook home page and do the validation</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Validate First Name field11</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.basic.backgroundSD.BackgroundStepDef.user_need_to_be_on_Facebook_login_page()">
+                <span>Given User need to be on Facebook login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.backgroundSD.BackgroundStepDef.user_enter_user_First_Name(java.lang.String)">
+                <span>When User enter user "Aditya" First Name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.backgroundSD.BackgroundStepDef.user_Checks_User_First_Name_is_present(java.lang.String)">
+                <span>Then User Checks User "Aditya" First Name is present</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.backgroundSD.BackgroundStepDef.close_browser()">
+                <span>Then close browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Validate Create user Multiple fields12</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.basic.backgroundSD.BackgroundStepDef.user_need_to_be_on_Facebook_login_page()">
+                <span>Given User need to be on Facebook login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.backgroundSD.BackgroundStepDef.user_enter_user_First_Name(java.lang.String)">
+                <span>When User enter user "Swati" First Name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.backgroundSD.BackgroundStepDef.user_enters_user_surname(java.lang.String)">
+                <span>And User enters user "Pareek" surname</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.backgroundSD.BackgroundStepDef.user_Checks_User_First_Name_is_present(java.lang.String)">
+                <span>Then User Checks User "Swati" First Name is present</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.backgroundSD.BackgroundStepDef.user_Mobile_field_should_be_blank()">
+                <span>Then User Mobile field should be blank</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.backgroundSD.BackgroundStepDef.close_browser()">
+                <span>Then close browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create account of facebook2</p>
+            <p class="text-sm">
+              <span>4:44:29 pm</span> / <span>00:00:23:067</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create account of facebook2</h5>
+<span class='badge badge-success'>10.28.2021 4:44:29 pm</span>
+<span class='badge badge-danger'>10.28.2021 4:44:52 pm</span>
+<span class='badge badge-default'>00:00:23:067</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user you need to open facebook home page and do the validation</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Validate Create user Multiple fields21</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>Validate Create user Multiple fields21</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User need to be on Facebook login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enter user "Swati" First Name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters user "Pareek" surname</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User Checks User "Swati" First Name is present</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User Mobile field should be blank</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then close browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="23"><span class="badge log pass-bg mr-2">Pass</span>Validate Create user Multiple fields21</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User need to be on Facebook login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enter user "Santosh" First Name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters user "Mali" surname</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User Checks User "Santosh" First Name is present</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User Mobile field should be blank</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then close browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create account of facebook3</p>
+            <p class="text-sm">
+              <span>4:44:52 pm</span> / <span>00:00:02:737</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create account of facebook3</h5>
+<span class='badge badge-success'>10.28.2021 4:44:52 pm</span>
+<span class='badge badge-danger'>10.28.2021 4:44:55 pm</span>
+<span class='badge badge-default'>00:00:02:737</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user you need to open facebook home page and do the validation</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>Validate Create user Multiple fields31</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.basic.datatableSD.DataTableStepDef.user_need_to_be_on_Facebook_login_page()">
+                <span>Given User need to be on Facebook login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.datatableSD.DataTableStepDef.Enter_following_data(io.cucumber.datatable.DataTable)">
+                <span>When Enter following data</span>
+      <div><table class='markup-table table '><tr><td>userName</td><td>surName</td></tr><tr><td>Swati</td><td>Pareek</td></tr><tr><td>Santa</td><td>Mali</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="34"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create account of facebook4</p>
+            <p class="text-sm">
+              <span>4:44:55 pm</span> / <span>00:00:02:576</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create account of facebook4</h5>
+<span class='badge badge-success'>10.28.2021 4:44:55 pm</span>
+<span class='badge badge-danger'>10.28.2021 4:44:57 pm</span>
+<span class='badge badge-default'>00:00:02:576</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user you need to open facebook home page and do the validation</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="35"><span class="badge log pass-bg mr-2">Pass</span>Validate First Name field41</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.basic.FirstFeaturefile.FirstStepDefFile.user_need_to_be_on_Facebook_login_page()">
+                <span>Given User need to be on Facebook login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.FirstFeaturefile.FirstStepDefFile.user_enter_user_First_Name()">
+                <span>When User enter user First Name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.FirstFeaturefile.FirstStepDefFile.user_Checks_User_First_Name_is_present()">
+                <span>Then User Checks User First Name is present</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="39"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create account of facebook5</p>
+            <p class="text-sm">
+              <span>4:44:57 pm</span> / <span>00:00:17:989</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create account of facebook5</h5>
+<span class='badge badge-success'>10.28.2021 4:44:57 pm</span>
+<span class='badge badge-danger'>10.28.2021 4:45:15 pm</span>
+<span class='badge badge-default'>00:00:17:989</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=39</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user you need to open facebook home page and do the validation</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="40"><span class="badge log pass-bg mr-2">Pass</span>Validate First Name field51</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.basic.hooksSD.HooksStepDef.user_need_to_be_on_Facebook_login_page()">
+                <span>Given User need to be on Facebook login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.hooksSD.HooksStepDef.user_enter_user_First_Name(java.lang.String)">
+                <span>When User enter user "Aditya" First Name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.hooksSD.HooksStepDef.user_Checks_User_First_Name_is_present(java.lang.String)">
+                <span>Then User Checks User "Aditya" First Name is present</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="48"><span class="badge log pass-bg mr-2">Pass</span>Validate Create user Multiple fields52</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.basic.hooksSD.HooksStepDef.user_need_to_be_on_Facebook_login_page()">
+                <span>Given User need to be on Facebook login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.hooksSD.HooksStepDef.user_enter_user_First_Name(java.lang.String)">
+                <span>When User enter user "Swati" First Name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.hooksSD.HooksStepDef.user_enters_user_surname(java.lang.String)">
+                <span>And User enters user "Pareek" surname</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.hooksSD.HooksStepDef.user_Checks_User_First_Name_is_present(java.lang.String)">
+                <span>Then User Checks User "Swati" First Name is present</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.hooksSD.HooksStepDef.user_Mobile_field_should_be_blank()">
+                <span>Then User Mobile field should be blank</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="58"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create account of facebook9</p>
+            <p class="text-sm">
+              <span>4:45:15 pm</span> / <span>00:00:18:299</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create account of facebook9</h5>
+<span class='badge badge-success'>10.28.2021 4:45:15 pm</span>
+<span class='badge badge-danger'>10.28.2021 4:45:34 pm</span>
+<span class='badge badge-default'>00:00:18:299</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=58</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user you need to open facebook home page and do the validation</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="59"><span class="badge log pass-bg mr-2">Pass</span>Validate First Name field91</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.basic.multiplescenarioSD.MultipleScenarioStepDef.user_need_to_be_on_Facebook_login_page()">
+                <span>Given User need to be on Facebook login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.multiplescenarioSD.MultipleScenarioStepDef.user_enter_user_First_Name()">
+                <span>When User enter user First Name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.multiplescenarioSD.MultipleScenarioStepDef.user_Checks_User_First_Name_is_present()">
+                <span>Then User Checks User First Name is present</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.multiplescenarioSD.MultipleScenarioStepDef.close_browser()">
+                <span>Then close browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="64"><span class="badge log pass-bg mr-2">Pass</span>Validate Create user Multiple fields92</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.basic.multiplescenarioSD.MultipleScenarioStepDef.user_need_to_be_on_Facebook_login_page()">
+                <span>Given User need to be on Facebook login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.multiplescenarioSD.MultipleScenarioStepDef.user_enter_user_First_Name()">
+                <span>When User enter user First Name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.multiplescenarioSD.MultipleScenarioStepDef.user_enters_user_surname()">
+                <span>And User enters user surname</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.multiplescenarioSD.MultipleScenarioStepDef.user_Checks_User_First_Name_is_present()">
+                <span>Then User Checks User First Name is present</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.multiplescenarioSD.MultipleScenarioStepDef.user_Mobile_field_should_be_blank()">
+                <span>Then User Mobile field should be blank</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.multiplescenarioSD.MultipleScenarioStepDef.close_browser()">
+                <span>Then close browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="71"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Validate fist and last name6</p>
+            <p class="text-sm">
+              <span>4:45:34 pm</span> / <span>00:00:12:501</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Validate fist and last name6</h5>
+<span class='badge badge-success'>10.28.2021 4:45:34 pm</span>
+<span class='badge badge-danger'>10.28.2021 4:45:46 pm</span>
+<span class='badge badge-default'>00:00:12:501</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=71</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user you need to validate fist and last name</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="72"><span class="badge log pass-bg mr-2">Pass</span>Check first and last name61</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.basic.multiSD.DemoStepDef.user_need_to_be_on_demo_site_page()">
+                <span>Given User need to be on demo site page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.multiSD.DemoStepDef.user_enter_firsr_name()">
+                <span>When User enter first name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.multiSD.DemoStepDef.user_enter_last_name()">
+                <span>When User enter last name</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="76"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Validate Search of google7</p>
+            <p class="text-sm">
+              <span>4:45:46 pm</span> / <span>00:00:05:631</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Validate Search of google7</h5>
+<span class='badge badge-success'>10.28.2021 4:45:46 pm</span>
+<span class='badge badge-danger'>10.28.2021 4:45:52 pm</span>
+<span class='badge badge-default'>00:00:05:631</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=76</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user you need to validate search of google</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="77"><span class="badge log pass-bg mr-2">Pass</span>Validate search field71</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.basic.multiSD.GoogleStepDef.user_need_to_be_on_google_page()">
+                <span>Given User need to be on Google page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.multiSD.GoogleStepDef.user_enter_search_string()">
+                <span>When User enter search String</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="80"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create account of facebook8</p>
+            <p class="text-sm">
+              <span>4:45:52 pm</span> / <span>00:00:19:324</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create account of facebook8</h5>
+<span class='badge badge-success'>10.28.2021 4:45:52 pm</span>
+<span class='badge badge-danger'>10.28.2021 4:46:11 pm</span>
+<span class='badge badge-default'>00:00:19:324</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=80</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user you need to open facebook home page and do the validation</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="81"><span class="badge log pass-bg mr-2">Pass</span>Validate First Name field81</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.basic.multiSD.MultiStepDef.user_need_to_be_on_Facebook_login_page()">
+                <span>Given User need to be on Facebook login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.multiSD.MultiStepDef.user_enter_user_First_Name(java.lang.String)">
+                <span>When User enter user "Aditya" First Name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.multiSD.MultiStepDef.user_Checks_User_First_Name_is_present(java.lang.String)">
+                <span>Then User Checks User "Aditya" First Name is present</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.multiSD.MultiStepDef.close_browser()">
+                <span>Then close browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="86"><span class="badge log pass-bg mr-2">Pass</span>Validate Create user Multiple fields82</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.basic.multiSD.MultiStepDef.user_need_to_be_on_Facebook_login_page()">
+                <span>Given User need to be on Facebook login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.multiSD.MultiStepDef.user_enter_user_First_Name(java.lang.String)">
+                <span>When User enter user "Swati" First Name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.multiSD.MultiStepDef.user_enters_user_surname(java.lang.String)">
+                <span>And User enters user "Pareek" surname</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.multiSD.MultiStepDef.user_Checks_User_First_Name_is_present(java.lang.String)">
+                <span>Then User Checks User "Swati" First Name is present</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.multiSD.MultiStepDef.user_Mobile_field_should_be_blank()">
+                <span>Then User Mobile field should be blank</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.multiSD.MultiStepDef.close_browser()">
+                <span>Then close browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="93"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create account of facebook10</p>
+            <p class="text-sm">
+              <span>4:46:11 pm</span> / <span>00:00:18:909</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create account of facebook10</h5>
+<span class='badge badge-success'>10.28.2021 4:46:11 pm</span>
+<span class='badge badge-danger'>10.28.2021 4:46:30 pm</span>
+<span class='badge badge-default'>00:00:18:909</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=93</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user you need to open facebook home page and do the validation</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="94"><span class="badge log pass-bg mr-2">Pass</span>Validate First Name field101</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.basic.parameterizaionSD.parameterizaionStepDef.user_need_to_be_on_Facebook_login_page()">
+                <span>Given User need to be on Facebook login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.parameterizaionSD.parameterizaionStepDef.user_enter_user_First_Name(java.lang.String)">
+                <span>When User enter user "Aditya" First Name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.parameterizaionSD.parameterizaionStepDef.user_Checks_User_First_Name_is_present(java.lang.String)">
+                <span>Then User Checks User "Aditya" First Name is present</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.parameterizaionSD.parameterizaionStepDef.close_browser()">
+                <span>Then close browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="99"><span class="badge log pass-bg mr-2">Pass</span>Validate Create user Multiple fields102</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.basic.parameterizaionSD.parameterizaionStepDef.user_need_to_be_on_Facebook_login_page()">
+                <span>Given User need to be on Facebook login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.parameterizaionSD.parameterizaionStepDef.user_enter_user_First_Name(java.lang.String)">
+                <span>When User enter user "Swati" First Name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.parameterizaionSD.parameterizaionStepDef.user_enters_user_surname(java.lang.String)">
+                <span>And User enters user "Pareek" surname</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.parameterizaionSD.parameterizaionStepDef.user_Checks_User_First_Name_is_present(java.lang.String)">
+                <span>Then User Checks User "Swati" First Name is present</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.parameterizaionSD.parameterizaionStepDef.user_Mobile_field_should_be_blank()">
+                <span>Then User Mobile field should be blank</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.parameterizaionSD.parameterizaionStepDef.close_browser()">
+                <span>Then close browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="106"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create account of facebook11</p>
+            <p class="text-sm">
+              <span>4:46:31 pm</span> / <span>00:00:18:658</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create account of facebook11</h5>
+<span class='badge badge-success'>10.28.2021 4:46:31 pm</span>
+<span class='badge badge-danger'>10.28.2021 4:46:49 pm</span>
+<span class='badge badge-default'>00:00:18:658</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=106</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user you need to open facebook home page and do the validation</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="107"><span class="badge log pass-bg mr-2">Pass</span>Validate First Name field111</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.basic.sharedataSD.ShareDataStepDef.user_need_to_be_on_Facebook_login_page()">
+                <span>Given User need to be on Facebook login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.sharedataSD.ShareDataStepDef.user_enter_user_First_Name(java.lang.String)">
+                <span>When User enter user "Aditya" First Name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.sharedataSD.ShareDataStepDef1.user_Checks_User_First_Name_is_present(java.lang.String)">
+                <span>Then User Checks User "Aditya" First Name is present</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="113"><span class="badge log pass-bg mr-2">Pass</span>Validate Create user Multiple fields112</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.basic.sharedataSD.ShareDataStepDef.user_need_to_be_on_Facebook_login_page()">
+                <span>Given User need to be on Facebook login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.sharedataSD.ShareDataStepDef.user_enter_user_First_Name(java.lang.String)">
+                <span>When User enter user "Swati" First Name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.sharedataSD.ShareDataStepDef1.user_enters_user_surname(java.lang.String)">
+                <span>And User enters user "Pareek" surname</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.sharedataSD.ShareDataStepDef1.user_Checks_User_First_Name_is_present(java.lang.String)">
+                <span>Then User Checks User "Swati" First Name is present</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.sharedataSD.ShareDataStepDef1.user_Mobile_field_should_be_blank()">
+                <span>Then User Mobile field should be blank</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="121"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create account of facebook12</p>
+            <p class="text-sm">
+              <span>4:46:49 pm</span> / <span>00:00:31:946</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create account of facebook12</h5>
+<span class='badge badge-success'>10.28.2021 4:46:49 pm</span>
+<span class='badge badge-danger'>10.28.2021 4:47:21 pm</span>
+<span class='badge badge-default'>00:00:31:946</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=121</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user you need to open facebook home page and do the validation</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="122"><span class="badge log pass-bg mr-2">Pass</span>Validate First Name field121</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.basic.tagsSD.TagsStepDef.user_need_to_be_on_Facebook_login_page()">
+                <span>Given User need to be on Facebook login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.tagsSD.TagsStepDef.user_enter_user_First_Name(java.lang.String)">
+                <span>When User enter user "Aditya" First Name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.tagsSD.TagsStepDef.user_Checks_User_First_Name_is_present(java.lang.String)">
+                <span>Then User Checks User "Aditya" First Name is present</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.tagsSD.TagsStepDef.close_browser()">
+                <span>Then close browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="127"><span class="badge log pass-bg mr-2">Pass</span>Validate Create user Multiple fields122</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.basic.tagsSD.TagsStepDef.user_need_to_be_on_Facebook_login_page()">
+                <span>Given User need to be on Facebook login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.tagsSD.TagsStepDef.user_enter_user_First_Name(java.lang.String)">
+                <span>When User enter user "Swati" First Name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.tagsSD.TagsStepDef.user_enters_user_surname(java.lang.String)">
+                <span>And User enters user "Pareek" surname</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.tagsSD.TagsStepDef.user_Checks_User_First_Name_is_present(java.lang.String)">
+                <span>Then User Checks User "Swati" First Name is present</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.tagsSD.TagsStepDef.user_Mobile_field_should_be_blank()">
+                <span>Then User Mobile field should be blank</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.tagsSD.TagsStepDef.close_browser()">
+                <span>Then close browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="134"><span class="badge log pass-bg mr-2">Pass</span>Validate First Name field124</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.basic.tagsSD.TagsStepDef.user_need_to_be_on_Facebook_login_page()">
+                <span>Given User need to be on Facebook login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.tagsSD.TagsStepDef.user_enter_user_First_Name(java.lang.String)">
+                <span>When User enter user "Aditya" First Name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.tagsSD.TagsStepDef.user_Checks_User_First_Name_is_present(java.lang.String)">
+                <span>Then User Checks User "Aditya" First Name is present</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.tagsSD.TagsStepDef.close_browser()">
+                <span>Then close browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="139"><span class="badge log pass-bg mr-2">Pass</span>Validate First Name field125</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.basic.tagsSD.TagsStepDef.user_need_to_be_on_Facebook_login_page()">
+                <span>Given User need to be on Facebook login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.tagsSD.TagsStepDef.user_enter_user_First_Name(java.lang.String)">
+                <span>When User enter user "Aditya" First Name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.tagsSD.TagsStepDef.user_Checks_User_First_Name_is_present(java.lang.String)">
+                <span>Then User Checks User "Aditya" First Name is present</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.basic.tagsSD.TagsStepDef.close_browser()">
+                <span>Then close browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@Regression</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Regression</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:46:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='121' id='127'>Validate Create user Multiple fields122</a>
+<div class="">
+<span class="badge badge-default">Create account of facebook12.Validate Create user Multiple fields122</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:47:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='121' id='134'>Validate First Name field124</a>
+<div class="">
+<span class="badge badge-default">Create account of facebook12.Validate First Name field124</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@Smoke</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Smoke</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:46:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='121' id='122'>Validate First Name field121</a>
+<div class="">
+<span class="badge badge-default">Create account of facebook12.Validate First Name field121</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:46:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='121' id='127'>Validate Create user Multiple fields122</a>
+<div class="">
+<span class="badge badge-default">Create account of facebook12.Validate Create user Multiple fields122</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:47:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='121' id='139'>Validate First Name field125</a>
+<div class="">
+<span class="badge badge-default">Create account of facebook12.Validate First Name field125</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@Important</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Important</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:46:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='121' id='122'>Validate First Name field121</a>
+<div class="">
+<span class="badge badge-default">Create account of facebook12.Validate First Name field121</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:46:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='121' id='127'>Validate Create user Multiple fields122</a>
+<div class="">
+<span class="badge badge-default">Create account of facebook12.Validate Create user Multiple fields122</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:47:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='121' id='134'>Validate First Name field124</a>
+<div class="">
+<span class="badge badge-default">Create account of facebook12.Validate First Name field124</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:47:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='121' id='139'>Validate First Name field125</a>
+<div class="">
+<span class="badge badge-default">Create account of facebook12.Validate First Name field125</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Oct 28, 2021 04:44:07 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Oct 28, 2021 04:47:21 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>12</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>12</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>22</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>96</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Create account of facebook1":20.247,"Create account of facebook2":23.067,"Create account of facebook3":2.737,"Create account of facebook4":2.576,"Create account of facebook5":17.989,"Create account of facebook9":18.299,"Validate fist and last name6":12.501,"Validate Search of google7":5.631,"Create account of facebook8":19.324,"Create account of facebook10":18.909,"Create account of facebook11":18.658,"Create account of facebook12":31.946
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Regression</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Smoke</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Important</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 12,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 22,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 96,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
