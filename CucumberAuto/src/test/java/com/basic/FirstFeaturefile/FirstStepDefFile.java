@@ -20,6 +20,7 @@ public class FirstStepDefFile {
 	    System.setProperty("webdriver.chrome.driver", "C:\\Work Learn\\Projects\\Cucumber setUp\\chromedriver_win32\\chromedriver.exe");
 	    driver = new ChromeDriver();
 	    driver.get("https://www.facebook.com/");
+	    System.out.println("Opening URL");
 	}
 
 	@When("^User enter user First Name$")
