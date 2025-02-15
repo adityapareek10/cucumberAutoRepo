@@ -20,11 +20,13 @@ public class BackgroundStepDef {
 	
 	@Given("^User need to be on Facebook login page$")
 	public void user_need_to_be_on_Facebook_login_page()  {
-		//ist comment
+             //ist comment
+             //ADitya method 1
 	    System.setProperty("webdriver.chrome.driver", "C:\\Work Learn\\Projects\\Cucumber setUp\\chromedriver_win32\\chromedriver.exe");
 	    driver = new ChromeDriver();
 	    driver.get("https://www.facebook.com/");
-		//2nd commnet
+             //2nd commnet
+             //ADitya method 2
 	}
 
 	@When("^User enter user \"([^\"]*)\" First Name$")
